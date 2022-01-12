@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crypto Anatomy |  Главная </title>
+	<link rel="shortcut icon" type="image/jpg" href="assets/images/logo-lighted.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+<body>
+	<div class="s-wrapper">
+		
+		<header class="header">
+	<div class="header__wrapper container-md">	
+		<a href="/index.html" class="header__logo logo">
+			<img src="assets/images/logo-lighted.png" alt="LOGO" class="logo__image">
+			<div class="logo__text">Crypto Anatomy</div>
+		</a>
+		<nav class="header__nav">
+			<li class="header__nav-item"><a class="header__nav-item-link" href="#">Волатильность</a></li>
+			<li class="header__nav-item"><a class="header__nav-item-link header__nav-item-link--active" href="posts.html">Лента</a></li>
+			<li class="header__nav-item"><a class="header__nav-item-link" href="#">Тариф PRO</a></li>
+			<li class="header__nav-item"><a class="header__nav-item-link" href="#">О проекте</a></li>
+		</nav>
+		<div class="header__button-side">	
+			<div class="header__search-bar search-bar">	
+				<i class="fas fa-search search-bar__icon mr-2"></i>
+				<input placeholder="Поиск..." class="header__search-bar-input search-bar__input input" type="text">
+			</div>	
+			<div class="button button-sm button-std  cursor" data-el="buttonLogin">Вход</div>
+			<div class="button button-sm button-spc cursor" data-el="buttonRegister">Регистрация</div>
+		</div>	
+		<div class="header__burger-button cursor" data-el="burgerButton-Open">
+			<i class="fas fa-bars"></i>
+		</div>
+	</div>
+</header>
+<div class="burger-menu" data-el="burgerMenu">	
+	<div class="button button-spc  button-sm mb-3" data-el="burgerButton-Close">
+		<i class="fas fa-arrow-right"></i>
+	</div>
+	<div class="burger-menu__search-bar search-bar mb-3">	
+		<i class="fas fa-search search-bar__icon mr-2"></i>
+		<input placeholder="Поиск..." class="burget-menu__search-bar-input search-bar__input input" type="text">
+	</div>	
+	<div>	
+		<div class="button button-sm cursor burger-menu__button mb-3" data-el="buttonLogin">Вход</div>
+		<div class="button button-sm cursor button-spc burger-menu__button cursor" data-el="buttonRegister">Регистрация</div>
+	</div>
+	<nav>
+		<li class="header__nav-item"><a class="header__nav-item-link" href="#">Волатильность</a></li>
+		<li class="header__nav-item"><a class="header__nav-item-link header__nav-item-link--active" href="posts.html">Лента</a></li>
+		<li class="header__nav-item"><a class="header__nav-item-link" href="#">Тариф PRO</a></li>
+		<li class="header__nav-item"><a class="header__nav-item-link" href="#">О проекте</a></li>
+
+	</nav>
+	<div>
+		<p class="text-center mt-3 wi"><i class="far fa-copyright"></i> Copyright <br>CryptoAnatomy</p>
+	</div>
+</div>
+		
+		<main>
+
+			
+	<article class="container-sm s-block-volatility pt-5">
+		<div class="row">
+			<div class="s-block-volatility__chart-block col-xl-9">
+				<div class="">
+					<h6 class="s-block-volatility__heading heading">
+						<img class="heading__image" src="assets/images/heading.png" alt="logo_heading">
+						Волатильность 
+						<span style="white-space: nowrap;">
+							криптовалют
+							<span class="heading__info info-box-caller">
+								<i class="fas fa-info-circle"></i>
+								<div class="heading__info-box info-box info-box--attached">
+									Волатильность криптовалют - это изменчивость цены актива за определенный промежуток времени. Сервис предоставляет информацию об условной волатильности криптовалют, вычисляемой как количество интервалов роста курса на определенный процент в течение заданного периода.
+								</div>
+							</span>
+						</span>
+					</h6>
+					<div class="s-block-volatility__chart">
+						<div class="d-flex flex-wrap s-block-volatility__filter-buttons">
+							<div class="s-block-volatility__button button button-sm button-spc button-dropdown">
+								Фильтр 
+								<i class="fas fa-sort-down button-dropdown__arrow"></i>
+								<div class="button-dropdown__options">
+									<div class="button-dropdown__option">Опция</div>
+									<div class="button-dropdown__option">Опция</div>
+									<div class="button-dropdown__option">Опция</div>
+								</div>
+							</div>
+							<div class="s-block-volatility__button button button-sm button-spc button-dropdown">
+								Фильтр 
+								<i class="fas fa-sort-down button-dropdown__arrow"></i>
+								<div class="button-dropdown__options">
+									<div class="button-dropdown__option">Опция</div>
+									<div class="button-dropdown__option">Опция</div>
+									<div class="button-dropdown__option">Опция</div>
+								</div>
+							</div>
+							<div class="s-block-volatility__button button button-sm button-spc button-dropdown">
+								Фильтр 
+								<i class="fas fa-sort-down button-dropdown__arrow"></i>
+								<div class="button-dropdown__options">
+									<div class="button-dropdown__option">Опция</div>
+									<div class="button-dropdown__option">Опция</div>
+									<div class="button-dropdown__option">Опция</div>
+								</div>
+							</div>
+						</div>
+						<div  class="s-block-volatility__chart-self">
+							<canvas height="300" id="myChart"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="s-block-volatility__brief-block s-block-volatility__block col-xl-3">
+				<div class="">
+					<div class="s-block-volatility__banner banner"></div>
+					<div class="s-block-volatility__brief-card brief-card">
+						<div class="brief-card__head">Курсы криптовалют</div>
+						<div class="brief-card__wrapper">
+							<table class="brief-card__table">
+								<tbody class="brief-card__table-body">
+									<tr class="brief-card__table-row">
+										<td class="brief-card__table-cell lighted">USDT/RUB</td>
+										<td class="brief-card__table-cell">₽71,92</td>
+										<td class="brief-card__table-cell">0.20%</td>
+									</tr>
+									<tr class="brief-card__table-row">
+										<td class="brief-card__table-cell lighted">USDT/RUB</td>
+										<td class="brief-card__table-cell">₽71,92</td>
+										<td class="brief-card__table-cell">0.20%</td>
+									</tr>
+									<tr class="brief-card__table-row">
+										<td class="brief-card__table-cell lighted">USDT/RUB</td>
+										<td class="brief-card__table-cell">₽71,92</td>
+										<td class="brief-card__table-cell">0.20%</td>
+									</tr>
+									<tr class="brief-card__table-row">
+										<td class="brief-card__table-cell lighted">USDT/RUB</td>
+										<td class="brief-card__table-cell">₽71,92</td>
+										<td class="brief-card__table-cell">0.20%</td>
+									</tr>
+									<tr class="brief-card__table-row">
+										<td class="brief-card__table-cell lighted">USDT/RUB</td>
+										<td class="brief-card__table-cell">₽71,92</td>
+										<td class="brief-card__table-cell">0.20%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<div class="s-block-news__back py-5">
+		<article class="container-sm s-block-news">
+				<h6 class="s-block-news__heading heading">
+					<img class="heading__image" src="assets/images/heading.png" alt="logo_heading">
+					Новости
+					<span class="heading__info info-box-caller">
+						<i class="fas fa-info-circle"></i>
+						<div class="heading__info-box info-box info-box--attached">
+							Здесь собраны актуальные, полезные и интересные новости из сферы криптовалют.
+							Новости распределены по категориям: все, Bitcoin, DeFi, Etherium, GameFi, NFT, Альткоины.
+							Вы можете добавить понравившуюся новость в избранное. А также сортировать его по созданным вами папкам.
+							Сохраненные новости будут отображаться в вашем личном кабинете и во вкладке “Избранное”.
+						</div>
+					</span>
+				</h6>
+				<div class="posts-nav">
+					<span class="posts-nav__item s-block-news__link info-box-caller">
+						все темы
+						<div class="info-box info-box--attached info-box--attached-right">
+							<span class="info-box__link"><a href="#">#тема </a></span>
+							<span class="info-box__link"><a href="#">#тема </a></span>
+							<span class="info-box__link"><a href="#">#тема </a></span>
+							<span class="info-box__link"><a href="#">#тема </a></span>
+							<span class="info-box__link"><a href="#">#тема </a></span>
+							<span class="info-box__link"><a href="#">#тема </a></span>
+							<span class="info-box__link"><a href="#">#тема </a></span>
+							<span class="info-box__link"><a href="#">#тема </a></span>
+						</div>
+					</span>
+					<a href="#" class="posts-nav__item s-block-news__link">DeFi</a>
+					<a href="#" class="posts-nav__item s-block-news__link">Etherium</a>
+					<a href="#" class="posts-nav__item s-block-news__link">GameFi</a>
+					<a href="#" class="posts-nav__item s-block-news__link">NFT</a>
+					<a href="#" class="posts-nav__item s-block-news__link">Альткоины</a>
+				</div>
+				<div class="s-block-news__wrapper row">
+					<section class="s-block-news__global-posts col-lg-5">
+						<div class="s-block-news__banner banner">
+						</div>
+						<div class="post post-usual">
+							<div class="post-usual__heart heart info-box-caller">
+							   	<i class="fas fa-heart"></i>
+							   	<div class="heart__info-box info-box info-box--attached">
+									<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+									Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+									<div class="d-flex">
+										<div class="info-box__button button button-mini mr-2">Ok</div>
+										<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+									</div>
+								</div>
+						   	</div>
+							<div class="post__brief post-usual__brief">
+								<a href="#" class="post__heading"><h4>Жесткая политика властей РФ в отношении криптовалют: чего пытается добиться регулятор?</h4></a>
+								<span class="post__date">04.10.2021</span><a href="#" class="post-usual__tag port__tag">#политика</a>
+							</div>
+						</div>
+						<div class="post post-usual">
+							<div class="post-usual__heart heart info-box-caller">
+							   	<i class="fas fa-heart"></i>
+							   	<div class="heart__info-box info-box info-box--attached">
+									<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+									Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+									<div class="d-flex">
+										<div class="info-box__button button button-mini mr-2">Ok</div>
+										<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+									</div>
+								</div>
+						   	</div>
+							<div class="post__brief post-usual__brief">
+								<a href="#" class="post__heading"><h4>Жесткая политика властей РФ в отношении криптовалют: чего пытается добиться регулятор?</h4></a>
+								<span class="post__date">04.10.2021</span><a href="#" class="post-usual__tag port__tag">#политика</a>
+							</div>
+						</div>
+						<div class="post post-usual">
+							<div class="post-usual__heart heart info-box-caller">
+							   	<i class="fas fa-heart"></i>
+							   	<div class="heart__info-box info-box info-box--attached">
+									<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+									Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+									<div class="d-flex">
+										<div class="info-box__button button button-mini mr-2">Ok</div>
+										<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+									</div>
+								</div>
+						   	</div>
+							<div class="post__brief post-usual__brief">
+								<a href="#" class="post__heading"><h4>Жесткая политика властей РФ в отношении криптовалют: чего пытается добиться регулятор?</h4></a>
+								<span class="post__date">04.10.2021</span><a href="#" class="post-usual__tag port__tag">#политика</a>
+							</div>
+						</div>
+					</section>
+					<section class="s-block-news__local-posts post-card-grid col-lg-7">
+						<div class="post post-card">
+					   		<img src="assets/images/local-new.png" alt="article-thumb" class="post-card__image">
+					   		<div class="post-card__brief post__brief">
+					   			<span class="post-card__date">04.10.2021</span>
+					   			<span class="post-card__tags">
+						   			<a href="#" class="post-card__tag">#политика</a>
+					   			</span>
+						   		<a href="#" class="post__heading"><h4>Асимметричная криптография: Что лежит в основе биткоина</h4></a>
+					   		</div>
+					   		<div class="post-card__heart heart info-box-caller">
+							   	<i class="fas fa-heart"></i>
+							   	<div class="info-box info-box--attached">
+									<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+									Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+									<div class="d-flex">
+										<div class="info-box__button button button-mini mr-2">Ok</div>
+										<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+									</div>
+								</div>
+						   	</div>
+					   </div>
+					   <div class="post post-card">
+					   		<img src="assets/images/local-new.png" alt="article-thumb" class="post-card__image">
+					   		<div class="post-card__brief post__brief">
+					   			<span class="post-card__date">04.10.2021</span>
+					   			<span class="post-card__tags">
+						   			<a href="#" class="post-card__tag">#политика</a>
+					   			</span>
+						   		<a href="#" class="post__heading"><h4>Асимметричная криптография: Что лежит в основе биткоина</h4></a>
+					   		</div>
+					   		<div class="post-card__heart heart info-box-caller">
+							   	<i class="fas fa-heart"></i>
+							   	<div class="info-box info-box--attached">
+									<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+									Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+									<div class="d-flex">
+										<div class="info-box__button button button-mini mr-2">Ok</div>
+										<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+									</div>
+								</div>
+						   	</div>
+					   </div>
+					   <div class="post post-card">
+					   		<img src="assets/images/local-new.png" alt="article-thumb" class="post-card__image">
+					   		<div class="post-card__brief post__brief">
+					   			<span class="post-card__date">04.10.2021</span>
+					   			<span class="post-card__tags">
+						   			<a href="#" class="post-card__tag">#политика</a>
+					   			</span>
+						   		<a href="#" class="post__heading"><h4>Асимметричная криптография: Что лежит в основе биткоина</h4></a>
+					   		</div>
+					   		<div class="post-card__heart heart info-box-caller">
+							   	<i class="fas fa-heart"></i>
+							   	<div class="info-box info-box--attached">
+									<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+									Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+									<div class="d-flex">
+										<div class="info-box__button button button-mini mr-2">Ok</div>
+										<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+									</div>
+								</div>
+						   	</div>
+					   </div>		  
+					</section>
+				</div>
+		</article>
+	</div>
+
+	<div class="s-block-app__back py-5">
+		<article class="container-sm s-block-app py-3">
+			<div class="s-block-app__wrapper">
+				<div class="s-block-app__main  s-block-app__block">
+					<h6 class="s-block-app__heading heading">
+						Наше приложение
+					</h6>
+					<div class="s-block-app__market-links">
+						<a href="#" class="s-block-app__market-link market-link apple-button">
+							<i class="fab fa-apple market-link__icon"></i>
+							<br>
+							<div class="market-link__text">
+								App
+								<br> 
+								Store
+							</div> 
+						</a>
+						<a href="#" class="s-block-app__market-link market-link google-play-button">
+							<i class="fab fa-google-play market-link__icon"></i>
+							<div class="market-link__text">	
+								Google
+								<br>
+								Play
+							</div>	
+						</a>
+					</div>
+				</div>
+				<div class="s-block-app__image  s-block-app__block">
+					<img src="assets/images/app.png" alt="app" class="s-block-app__image-self">
+				</div>
+				<div class="s-block-app__more  s-block-app__block">
+					<h6 class="heading s-block-app__heading">
+						Тариф PRO
+					</h6>
+					<ul class="s-block-app__advantages">
+						<li>- больше мобильности</li>
+						<li>- настраивай уведомления на телефоне или на почте</li>
+						<li>- оффлайн доступ</li>
+						<li>- никакой рекламы в приложении</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+	</div>
+
+	<article class="container-sm s-block-popular py-5">
+		<div class="">
+			<div class="s-block-popular__wrapper">
+				<h6 class="s-block-volatility__heading heading">
+					<img class="heading__image" src="assets/images/heading.png" alt="logo_heading">
+					Популярное
+				</h6>
+			</div>
+			<div class="row s-block-popular__content">
+				<div class="col-lg-3">
+					<div class=" s-block-popular__banner-wrapper">
+						<div class="s-block-popular__banner banner"></div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="post post-card post-card-large s-block-popular__post-card">
+						<img src="assets/images/big-post.png" alt="" class="post-card__image">
+						<div class="post__brief post-card__brief post-card-large__brief">	
+							<span class="post__date">04.10.2021</span>
+							<span class="post-card__tags">
+					   			<a href="#" class="post-card__tag">#политика</a>
+				   			</span>
+							<a href="#" class="post__heading"><h4>Жесткая политика властей РФ в отношении криптовалют: чего пытается добиться регулятор?</h4></a>
+						</div>
+						<div class="post-card__heart heart info-box-caller">
+						   	<i class="fas fa-heart"></i>
+						   	<div class="info-box info-box--attached">
+								<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+								Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+								<div class="d-flex">
+									<div class="info-box__button button button-mini mr-2">Ok</div>
+									<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+								</div>
+							</div>
+					   	</div>
+					</div>
+					<div class="post post-card post-card-large s-block-popular__post-card">
+						<img src="assets/images/big-post.png" alt="" class="post-card__image">
+						<div class="post__brief post-card__brief post-card-large__brief">	
+							<span class="post__date">04.10.2021</span>
+							<span class="post-card__tags">
+					   			<a href="#" class="post-card__tag">#политика</a>
+				   			</span>
+							<a href="#" class="post__heading"><h4>Жесткая политика властей РФ в отношении криптовалют: чего пытается добиться регулятор?</h4></a>
+						</div>
+						<div class="post-card__heart heart info-box-caller">
+						   	<i class="fas fa-heart"></i>
+						   	<div class="info-box info-box--attached">
+								<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+								Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+								<div class="d-flex">
+									<div class="info-box__button button button-mini mr-2">Ok</div>
+									<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+								</div>
+							</div>
+					   	</div>
+					</div>
+					<div class="post post-card post-card-large s-block-popular__post-card">
+						<img src="assets/images/big-post.png" alt="" class="post-card__image">
+						<div class="post__brief post-card__brief post-card-large__brief">	
+							<span class="post__date">04.10.2021</span>
+							<span class="post-card__tags">
+					   			<a href="#" class="post-card__tag">#политика</a>
+				   			</span>
+							<a href="#" class="post__heading"><h4>Жесткая политика властей РФ в отношении криптовалют: чего пытается добиться регулятор?</h4></a>
+						</div>
+						<div class="post-card__heart heart info-box-caller">
+						   	<i class="fas fa-heart"></i>
+						   	<div class="info-box info-box--attached">
+								<span class="lighted info-box__heading">Новость сохранена в Избранное.</span>
+								Статистический финансовый показатель, характеризующий изменчивость цены на что-либо.
+								<div class="d-flex">
+									<div class="info-box__button button button-mini mr-2">Ok</div>
+									<div class="info-box__button button button-mini" style="background: red;">Отмена</div>
+								</div>
+							</div>
+					   	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+		</main>
+		
+		<div class="footer__back">
+			<footer class="footer container-sm py-5">
+				<div class="footer__wrapper  d-flex flex-wrap justify-content-center align-items-center">
+					<div class="mb-3">
+						Crypto Anatomy предупреждает о возможности рисков и оповещает, что информация на данном веб-сайте взята из различных источников, может быть не всегда актуальна или полностью верна, не является инвестиционной рекомендацией, может не соответствовать вашим инвестиционным целям и профилю. Предоставляемая информация носит ознакомительный, ориентировочный, вспомогательный характер. Crypto Anatomy не имеет отношения к решениям пользователей, принятым на основании данной информации.
+						<br><br>
+						Торгуя криптовалютами, следует помнить о рисках, в том числе о возможности утраты части инвестиций или всей суммы. Принимая решение о торговле криптовалютами, необходимо иметь достаточно информации в данной сфере, быть готовым к риску потери инвестиций, трезво оценивать свои цели, знания и опыт.
+					</div>
+					<a href="#" class="footer__logo logo">
+						<img src="assets/images/logo-gray.png" alt="LOGO" class="logo__image">
+						<div class="logo__text">Crypto Anatomy</div>
+					</a>
+					<div class="footer__items">
+						<div class=footer__item><a href="#" class="footer__link footer__item ">Почта для ваших вопросов и предложений</a></div>
+						<div class=footer__item><a href="#" class="footer__link footer__item" id="agreement">Пользовательское соглашение</a></div>
+						<div class=footer__item><a href="#" class="footer__link footer__item ">Правовая информация</a></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+	<!-- [ Modal windows ] -->
+
+	<div class="modal-background d-none" data-el="modalBack"></div>
+	<div class="modal-window modal-window-mini" data-el="modalQuestion">
+		<div class="modal-window__wrapper" data-el="modalQuestion.questionWrapper">
+			<div class="modal-window-mini__window-buttons">
+				<i class="fas fa-cog cursor" data-el="modalQuestion.buttonSettings"></i>
+				<i class="far fa-window-close cursor" data-el="modalQuestion.closeButton"></i>
+			</div>
+			<div data-el="modalQuestion.wrapperInput">
+				<div class="heading modal-window-mini__heading">
+					Заглавие
+				</div>
+				<div class="modal-window-mini__question mb-2" data-el="modalQuestion.question">
+					Не следует, однако забывать, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание систем массового участия. Да или нет?
+				</div>
+				<textarea type="text" class="modal-window-mini__input w-100" data-el="modalQuestion.inputAnswer"></textarea>
+				<div class="modal-window-mini__button button button-sm" data-el="modalQuestion.buttonSend">
+					Узнать правильный ответ
+				</div>
+			</div>	
+			<div class="d-none" data-el="modalQuestion.wrapperOutput">
+				<div class="heading modal-window-mini__heading">
+					Ответ
+				</div>
+				<div class="modal-window-mini__question mb-5" data-el="modalQuestion.answer">
+					Не следует, однако забывать, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание систем массового участия. Да или нет?
+				</div>
+				<div class="modal-window-mini__button button button-sm" data-el="modalQuestion.buttonAgain">
+					Новый вопрос
+				</div>
+			</div>
+		</div>
+		<div class="modal-window__settings-wrapper d-none" data-el="modalQuestion.settingsWrapper">
+			<div class="modal-window-mini__window-buttons">
+				<i class="far fa-window-close cursor" data-el="modalQuestion.buttonSettingsClose"></i>
+			</div>
+			<div class="heading modal-window-mini__heading">
+				Настройки
+			</div>
+			<input class="d-none" type="checkbox" data-el="modalQuestion.checkboxAlwaysDisplay">
+			<input class="d-none" type="checkbox" data-el="modalQuestion.checkboxOftenDisplay">
+			<input class="d-none" type="checkbox" data-el="modalQuestion.checkboxNeverDisplay">
+			<div class="mt-4 mb-5">
+				<!-- <div class="checkbox checkbox--active mr-2 mt-1"></div> -->
+				<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalQuestion.alwaysDisplay">
+					всегда показывать
+				</p>
+				<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalQuestion.oftenDisplay">
+					показывать реже
+				</p>
+				<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalQuestion.neverDisplay">
+					никога не показывать
+				</p>
+			</div>
+			<div class="modal-window-mini__button button button-sm" data-el="modalQuestion.buttonSettingsSave">
+				Сохранить
+			</div>
+		</div>	
+	</div>
+	<div class="s-modal-register modal-window modal-window--fixed d-none" data-el="modalRegister">
+		<div class="modal-window__close-button cursor" data-el="modalRegister.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper" data-el="modalRegister.wrapper">
+			<h6 class="modal-window__heading">
+				<img src="assets/images/heading.png" class="modal-window__heading-logo" alt="logo_heading">
+				<span>Регистрация</span>
+			</h6>
+			<p class="text-center modal-window__p modal-window__sub-heading modal-window__p--upper mt-3" style="font-family: var(--font1);">Добро пожаловать в <span class="special-font">Crypto Anatomy</span></p>
+			<div class="s-modal__type-toggle">
+				<p class="modal-window__p text-center">
+					<span class="lighted cursor mr-5" data-el="modalRegister.withMail">E-MAIL</span> 
+					<span class="cursor" data-el="modalRegister.withPhone">ТЕЛЕФОН</span>
+				</p>
+			</div>
+			<div class="s-modal-register__inputs">
+				<input placeholder="E-MAIL" type="text" class="modal-window__input s-modal-register__input input" data-el="modalRegister.inputMail">
+				<input placeholder="ТЕЛЕФОН" type="phone" class="d-none modal-window__input s-modal-register__input input" data-el="modalRegister.inputPhone">
+				<input placeholder="ПАРОЛЬ" type="password" class="modal-window__input s-modal-register__input input">
+				<input class="d-none" type="checkbox" name="subscribe" data-el="modalRegister.checkboxSubscribe">
+				<input class="d-none" type="checkbox" name="agree" data-el="modalRegister.checkboxAgree">
+				<div class="mt-4 mb-3">
+					<!-- <div class="checkbox checkbox--active mr-2 mt-1"></div> -->
+					<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalRegister.subscribe">
+						подпишись для получения обновлений по e-mail
+					</p>
+					<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalRegister.agree">
+						я ознакомился(ась) и соглашаюсь с <a class="lighted" id="security" href="#">условиями обслуживания </a> Crypto Anatomy
+					</p>  
+				</div>
+				<div class="modal-window__button button button-lg">Регистрация</div>
+				<span class="modal-window__p d-block mt-3">Есть аккаунт? <a class="lighted" href="#">Войти</a></span> 
+			</div>
+		</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalLogin">
+		<div class="modal-window__close-button cursor" data-el="modalLogin.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper" data-el="modalLogin.wrapper">
+			<h6 class="modal-window__heading">
+				<img src="assets/images/heading.png" class="modal-window__heading-logo" alt="logo_heading">
+				<span>Вход</span>
+			</h6>
+			<p class="text-center modal-window__p modal-window__sub-heading modal-window__p--upper mt-3" style="font-family: var(--font1);">Вы вернулись! используйте для входа электронную почту или штрихкод</p>
+			<div>
+				<div class="s-modal__type-toggle">
+					<p class="modal-window__p text-center">
+						<span class="lighted cursor mr-5" data-el="modalLogin.withMail">E-MAIL</span> 
+						<span class="cursor" data-el="modalLogin.withPhone">ТЕЛЕФОН</span>
+					</p>
+				</div>
+				<div class="s-modal-register__inputs">
+					<input placeholder="E-MAIL" type="text" class="modal-window__input s-modal-register__input input" data-el="modalLogin.inputMail">
+					<input placeholder="ТЕЛЕФОН" type="phone" class="d-none modal-window__input s-modal-register__input input" data-el="modalLogin.inputPhone">
+					<input placeholder="ПАРОЛЬ" type="password" class="modal-window__input s-modal-register__input input">
+					<input class="d-none" type="checkbox" name="subscribe" data-el="modalLogin.checkboxSubscribe">
+					<div class="d-flex">
+						<div class="modal-window__button button button-lg w-75 mr-2">Вход</div>
+						<div class="modal-window__button button button-lg button-circle w-25"><i class="fas fa-qrcode"></i></div>
+					</div>
+					<span class="modal-window__p d-block mt-3">Забыли пароль? <a class="lighted" href="#">Восстановить</a></span>
+					<span class="modal-window__p d-block"><a href="#" class="lighted">Зарегистрироваться</a></span> 
+				</div>
+			</div>
+			<div class="s-modal-login__qr-wrapper d-none">
+				<div class="s-modal-login__qr mb-1">
+					<img src="assets/images/qr.png" alt="qr" class="s-modal-login__qr-image">
+				</div>
+				<p class="modal-window__p text-center">
+					Использовать штрихкод
+					<br> 
+					из <span class="lighted">приложения Crypto Anatomy </span>
+					<br>
+					для быстрого входа
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalCopyright">
+		<div class="modal-window__close-button cursor" data-el="modalCopyright.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper">
+			<h6 class="modal-window__heading mb-4">
+				<span>Защита авторских прав</span>
+			</h6>
+			<p>
+	Защита авторских прав, как и защита смежных, патентных и других прав интеллектуальной собственности обеспечивается предусмотренными законодательством способами с учетом существа нарушенного права и последствий нарушения этого права» (пункт 1 статьи 150 ГК РФ).<br><br>
+	Любые лица, использующие произведение, вправе осуществлять такое использование только с согласия автора или правообладателя, кроме случаев использования произведения в пределах законодательно установленных исключений (например, цитирование, распространение (продажа) экземпляров произведения, правомерно выпущенных в гражданский оборот с согласия правообладателя, и т.д.).<br><br>
+	Подтверждением согласия обладателя исключительного права на произведение на его использование является лицензионный договор, заключаемый между правообладателем и пользователем (лицом, использующим произведение).
+	Таким образом, для доказывания наличия нарушения исключительного права на произведение необходимо и достаточно одновременное наличие двух обстоятельств:<br><br>
+	1)  факта использования произведения каким-либо способом, в том числе совершения в отношении произведения одного из видов действий, предусмотренных статьей 1270 ГК РФ;<br>
+	2) отсутствия у лица, осуществляющего использование произведения, договора с правообладателем (или предшествующим лицензиатом).<br><br>
+	Соответствующие способы защиты прав могут применяться по требованию правообладателей и организаций по управлению правами на коллективной основе, а также иных лиц.
+	Отсутствие вины нарушителя не освобождает его от обязанности прекратить нарушение прав, а также не исключает применение в отношении нарушителя мер, направленных на защиту прав.
+	В ряде случаев Гражданский кодекс устанавливает специальные способы защиты прав, предназначенные для применения только при нарушениях в отдельных случаях, в частности, нормы о возможности взыскания специальной компенсации за нарушение исключительного права.
+	Защита авторских прав (Статья 1252  ГК РФ) может осуществляться путем направления претензии о нарушении и предъявлением требования к нарушителю прав:
+	<br><br>
+	- о признании права;<br>
+	- о пресечении действий, нарушающих право или создающих угрозу его нарушения;<br>
+	- о возмещении убытков (в частности, за использование без договора);<br>
+	- об изъятии материального носителя (оборудования, устройств и материалов);<br>
+	- о публикации решения суда о допущенном нарушении прав (такое требование может быть предъявлено к любому нарушителю исключительного права вне зависимости от наличия его вины).<br>
+	<br><br>
+	Следует специально отметить, что ответственность, какая установлена за бездоговорное использование произведений, несут лицензиаты, вышедшие за пределы использования произведения, установленные лицензионным договором.
+	За различные случаи нарушений авторских прав законодательством установлена ответственность:
+	гражданско-правовая
+	административная
+	уголовная
+	Правообладатели понимать необходимость заранее позаботиться об охране и защите прав интеллектуальной собственности и зарегистрировать права.
+</p>
+		</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalAgreement">
+		<div class="modal-window__close-button cursor" data-el="modalAgreement.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper">
+			<h6 class="modal-window__heading mb-4">
+				<span>Пользовательское соглашение</span>
+			</h6>
+			<p>
+	<b>Настоящее Соглашение определяет условия использования Пользователями материалов и сервисов сайта http://cryptanomy.com/ 
+	</b><br><br>1. Термины<br><br>
+	1.1. В Соглашении используются термины в следующих значениях:<br><br>
+	1.1.1. Акцепт — полное и безоговорочное принятие Оферты путем
+	осуществления действий указанных в п.4.1. Соглашения.<br><br>
+	1.1.2. Контент - все объекты, доступные на Сайте, в том числе элементы
+	дизайна, текст, графические изображения, иллюстрации, видео, программы для ЭВМ, базы данных, музыка, звуки и другие объекты:<br><br>
+	1.1.3. Личный кабинет — закрытая от публичного доступа часть Сайта,
+	доступ Пользователя к которой осуществляется с использованием Учетной
+	записи.<br><br>
+	1.1.4. Лицензия - право Пользователя использовать Сайт на условиях простой (неисключительной) лицензии с сохранением за Правообладателем права выдачи лицензий другим лицам.<br><br>
+
+	1.1.5. Оферта — настоящий документ, размещенный в сети Интернет.<br><br>
+
+	1.1.6. Сайт - автоматизированная информационная система, доступная в сети Интернет по адресу http://cryptanomy.com/ (включая поддомены).<br><br>
+
+	1.1.7. Учетная запись Пользователя - совокупность информационных
+	данных о Пользователе‚ зафиксированная в цифровом формате и необходимая для опознавания Пользователя и предоставления доступа к его личным данным, настройкам и контенту.<br><br>
+
+	2. Общие условия<br><br>
+	2.1. Использование материалов и сервисов Сайта регулируется нормами действующего законодательства Российской Федерации.<br><br>
+	2.2. Настоящее Соглашение является публичной офертой. Получая доступ к материалам Сайта Пользователь считается присоединившимся к настоящему Соглашению.<br><br>
+	2.3. Администрация Сайта вправе в любое время в одностороннем порядке изменять условия настоящего Соглашения. Такие изменения вступают в силу по истечении 3 (трех) дней с момента размещения новой версии Соглашения на сайте. При несогласии Пользователя с внесенными изменениями он обязан отказаться от доступа к Сайту, прекратить использование материалов и сервисов Сайта.<br><br>
+	3. Обязательства Пользователя<br><br>
+	3.1. Пользователь соглашается не предпринимать действий, которые могут рассматриваться как нарушающие российское законодательство или нормы международного права, в том числе в сфере интеллектуальной собственности, авторских и/или смежных правах, а также любых действий, которые приводят или могут привести к нарушению нормальной работы Сайта и сервисов Сайта.<br><br>
+	3.2. Использование материалов Сайта без согласия правообладателей не допускается (статья 1270 Г.К РФ). Для правомерного использования материалов Сайта необходимо заключение лицензионных договоров (получение лицензий) от Правообладателей.<br><br>
+	3.3. При цитировании материалов Сайта, включая охраняемые авторские произведения, ссылка на Сайт обязательна (подпункт 1 пункта 1 статьи 1274 Г.К РФ).<br><br>
+	3.4. Комментарии и иные записи Пользователя на Сайте не должны вступать в противоречие с требованиями законодательства Российской Федерации и общепринятых норм морали и нравственности.<br><br>
+	3.5. Пользователь предупрежден о том, что Администрация Сайта не несет ответственности за посещение и использование им внешних ресурсов, ссылки на которые могут содержаться на сайте.<br><br>
+	3.6. Пользователь согласен с тем, что Администрация Сайта не несет ответственности и не имеет прямых или косвенных обязательств перед Пользователем в связи с любыми возможными или возникшими потерями или убытками, связанными с любым содержанием Сайта, регистрацией авторских прав и сведениями о такой регистрации, товарами или услугами, доступными на или полученными через внешние сайты или ресурсы либо иные контакты Пользователя, в которые он вступил, используя размещенную на Сайте информацию или ссылки на внешние ресурсы.<br><br>
+	3.7. Пользователь принимает положение о том, что все материалы и сервисы Сайта или любая их часть могут сопровождаться рекламой. Пользователь согласен с тем, что Администрация Сайта не несет какой-либо ответственности и не имеет каких-либо обязательств в связи с такой рекламой.<br><br>
+	4. Обработка персональных данных<br><br>
+	4.1. Присоединяясь к настоящему Соглашению и оставляя свои данные на настоящем Сайте http://cryptanomy.com/ путем заполнения соответствующих полей Пользователь в соответствии с требованиями Федерального закона №152-ФЗ «О персональных данных» выражает свое Согласие на обработку персональных данных и их передачу Администрации Сайта, выступающей в качестве оператора обработки персональных данных (далее – «Оператор»).<br><br>
+	4.2. Пользователь подтверждает, что все указанные им данные принадлежат лично ему.<br><br>
+	4.3. Согласие дается на обработку, в том числе с использованием средств автоматизации или без их использования, следующих персональных данных Пользователя, указанных Пользователем в размещенных на Сайте формах или в файлах, прикрепленных к формам (только в случае предоставления таких данных самим Пользователем):
+	телефон;
+	адрес электронной почты;
+	логин;
+	иных персональных данных, указанных Пользователем в формах или файлах, прикрепленных к формам.<br><br>
+	4.4. Целью обработки персональных данных является их хранение и использование, в том числе:
+	ответы на запросы Пользователей;
+	обеспечение работы Пользователя с Сайтом Оператора;
+	направление Пользователям аналитических материалов и информирование Пользователей о предстоящих мероприятиях, организуемых Оператором, а также регистрация Пользователей для участия в таких мероприятиях;
+	заключение с Пользователем договоров и выполнение договорных обязательств перед Пользователем.<br><br>
+	4.5. Пользователь уведомлен и согласен с тем, что обработка его персональных данных включает в себя следующие действия: сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (предоставление доступа), обезличивание, блокирование, удаление, уничтожение персональных данных.<br><br>
+	4.5. Настоящее Согласие Пользователя признается исполненным в простой письменной форме.<br><br>
+	4.6. Согласие действует бессрочно с момента предоставления данных и может быть отозвано Пользователем путем подачи письменного заявления Оператору с указанием данных, определенных статьей 14 Федерального закона №152-ФЗ «О персональных данных» по адресу нахождения Администрации Сайта, указанному на настоящем Сайте.<br><br>
+	4.7. Передача персональных данных Пользователя третьим лицам не осуществляется, за исключением случаев, установленных законодательством.<br><br>
+	4.8. Оператор имеет право вносить изменения в настоящее Соглашение путем размещения новой редакции Соглашения.<br><br>
+
+	5. Прочие условия<br><br>
+	5.1. Все возможные споры, вытекающие из настоящего Соглашения или связанные с ним, подлежат разрешению в соответствии с действующим законодательством Российской Федерации.<br><br>
+	5.2. Ничто в Соглашении не может пониматься как установление между Пользователем и Администрации Сайта агентских отношений, отношений товарищества, отношений по совместной деятельности, отношений личного найма, либо каких-то иных отношений, прямо не предусмотренных Соглашением.<br><br>
+	5.3. Признание судом какого-либо положения Соглашения недействительным или не подлежащим принудительному исполнению не влечет недействительности иных положений Соглашения.<br><br>
+	5.4. Бездействие со стороны Администрации Сайта в случае нарушения кем-либо из Пользователей положений Соглашения не лишает Администрацию Сайта права предпринять позднее соответствующие действия в защиту своих интересов и защиту авторских прав на охраняемые в соответствии с законодательством материалы Сайта.<br><br>
+	<b>Пользователь подтверждает, что ознакомлен со всеми пунктами настоящего Соглашения и безусловно принимает их.</b>
+	<br><br>
+	<a href="#" id="copyright">защита авторских прав</a>
+
+</p>
+			</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalSecurity">
+		<div class="modal-window__close-button cursor" data-el="modalSecurity.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper">
+			<h6 class="modal-window__heading mb-4">
+				<span>Обработка персональных данных</span>
+			</h6>
+			<p>
+	Присоединяясь к настоящему Соглашению и оставляя свои данные на настоящем Сайте http://cryptanomy.com/ путем заполнения соответствующих полей, Пользователь в соответствии с требованиями Федерального закона №152-ФЗ «О персональных данных» выражает свое Согласие на обработку персональных данных и их передачу Администрации Сайта, выступающей в качестве оператора обработки персональных данных (далее – «Оператор»).
+	Пользователь подтверждает, что все указанные им данные принадлежат лично ему.
+	Согласие дается на обработку, в том числе с использованием средств автоматизации или без их использования, следующих персональных данных Пользователя, указанных Пользователем в размещенных на Сайте формах или в файлах, прикрепленных к формам (только в случае предоставления таких данных самим Пользователем):<br><br>
+	- телефон; <br>
+	- адрес электронной почты; <br>
+	- логин; <br><br>
+	иных персональных данных, указанных Пользователем в формах или файлах, прикрепленных к формам.
+	Целью обработки персональных данных является их хранение и использование, в том числе: <br><br>
+	- ответы на запросы Пользователей; <br>
+	- обеспечение работы Пользователя с Сайтом Оператора; <br>
+	- направление Пользователям аналитических материалов и информирование Пользователей о предстоящих мероприятиях, организуемых Оператором, а также регистрация Пользователей для участия в таких мероприятиях; <br><br>
+	заключение с Пользователем договоров и выполнение договорных обязательств перед Пользователем.
+	Пользователь уведомлен и согласен с тем, что обработка его персональных данных включает в себя следующие действия: сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (предоставление доступа), обезличивание, блокирование, удаление, уничтожение персональных данных.
+	Настоящее Согласие Пользователя признается исполненным в простой письменной форме.
+	Согласие действует бессрочно с момента предоставления данных и может быть отозвано Пользователем путем подачи письменного заявления Оператору с указанием данных, определенных статьей 14 Федерального закона №152-ФЗ «О персональных данных» по адресу нахождения Администрации Сайта, указанному на настоящем Сайте.
+	Передача персональных данных Пользователя третьим лицам не осуществляется, за исключением случаев, установленных законодательством.<br><br>
+	Оператор имеет право вносить изменения в настоящее Соглашение путем размещения новой редакции Соглашения.
+</p>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		const labels = ["BTC","BTC","BTC","BTC","BTC","BTC","BTC",
+		"BTC","BTC","BTC","BTC","BTC","BTC","BTC",];
+		const data = {
+		  labels: labels,
+		  datasets: [{
+		    label: 'My First Dataset',
+		    data: [65, 59, 80, 81, 56, 55, 40,65, 59, 80, 81, 56, 55, 40],
+		    backgroundColor: [
+		      '#FFC700'
+		    ]
+		  }]
+		};
+		const config = {
+			type: 'bar',
+			data: data,
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				plugins:{
+					legend:{
+						display: false
+					}
+				}
+			},
+		};
+		Chart.defaults.font.size = 16
+		const myChart = new Chart(
+		    document.getElementById('myChart'),
+		    config
+		  );
+		 
+	</script>
+	<script src="assets/js/component.js"></script>
+	<script src="assets/js/addition.js"></script>
+	<script src='assets/js/index.js'></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+html{
+	font-size: 12px;
+}
+main{
+	min-height: 90vh;
+}
+
+
+body{
+	font-family: var(--main-font), sans-serif;
+	overflow-x: hidden;
+	background: #FFFCDC;
+}
+
+a{
+	text-decoration: none;
+	color: var(--lighted);
+}
+
+b{
+	font-weight: bold;
+}
+
+a:hover{
+	color: var(--lighted);
+}
+
+.market-link{
+	color: var(--black);
+	width: fit-content;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1em;
+	font-weight: 700;
+	&__icon{
+		font-size: 2em;
+		margin-bottom: 0.2em;
+	}
+	&__text{
+		color: inherit;
+		font-size: 1em;
+	}
+}
+
+
+.lighted{
+	color: var(--lighted);
+}
+
+.special-font{
+	font-family: var(--special-font);
+}
+
+.checkboxed{
+	line-height: 1.2em;
+	pointer-events: all;
+	user-select: none;
+	margin-bottom: 1em;
+}
+
+.checkboxed--active::before{
+	background: var(--lighted);
+}
+
+.checkboxed::before{
+	// pointer-events: all;
+	content: "";
+	position: absolute;
+	transform:translate( calc(-100% - 0.8em));
+	border: 0.05em solid var(--lighted);
+	height: 1.5em;
+	width: 1.5em;
+	cursor: pointer;
+	&--active{
+		background: var(--lighted);
+	}
+}
+
+.s-block{
+	padding: 3em 2em;
+	max-width: 1800px;
+	margin: auto;
+}
+
+.cursor{
+	cursor:pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes add-fade{
+	from{
+		display: block !important;
+		opacity: 0;
+		top: 0.5em;
+	}
+	to{
+		display: none;
+		opacity: 1;
+	}
+}
+
+@media (hover: hover) and (pointer: fine){
+	
+}
+
+@media (max-width:1000px){
+	html{
+		font-size: 14px;
+	}
+	.heading{
+		text-align:center;
+		margin-left: 0;
+		&__image{
+			transform: none;
+			margin-bottom: .5em;
+		}
+	}
+	.logo{
+		font-size: 2em;
+		width: min-content;
+	}
+}

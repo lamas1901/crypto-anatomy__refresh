@@ -1,0 +1,43 @@
+.footer{
+	&__back{
+		background: var(--lighted);
+	}
+	&__logo{
+		font-size: 0.7em;
+		color: var(--back-black);
+		&:hover{
+			color: inherit;
+		}
+	}
+	&__wrapper{
+		gap: 2em;
+	}
+	&__link{
+		color: var(--back-black);
+		&:hover{
+			color: inherit;
+		}
+	}
+	&__items{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 2em;
+	}
+	&__item{
+		font-size: 1.1em;
+		margin: 0.5em 0;
+		text-align: center;
+	}
+}
+
+@media (hover:hover) and (pointer:fine){
+	.footer{
+		&__link{
+			&:hover{
+				color: var(--light);
+			}
+		}
+	}
+}

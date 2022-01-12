@@ -1,0 +1,115 @@
+.s-block-volatility{
+	margin-bottom: 3em;
+	// &__heading{
+	// 	margin: 2rem 0;
+	// }
+	&__banner{
+		height: 4.8em;
+		background: var(--gray);
+	}
+	&__button{
+		margin: 0.5em;
+	}
+	&__brief-block{
+		margin-top: 3rem;	
+	}
+	&__banner{
+		margin-bottom: 1.5em;
+	}
+	&__filter-buttons{
+		margin-bottom: 1.5em;
+	}
+}
+
+
+.s-block-news{
+	color: var(--light);
+	&__back{
+		background: var(--back-black);
+	}
+	&__heading{
+		margin-left: 1rem;
+	}
+	&__local-posts{
+		margin-bottom: 2em;
+	}
+	&__global-posts{
+		margin-bottom: 2em;
+	}
+	&__banner{
+		background: var(--light);
+		height: 5em;
+
+	}
+	&__link{
+		color: var(--light);
+	}
+}
+
+.s-block-app{
+	&__back{
+		background: var(--lighted);
+	}
+	&__wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2em;
+	}
+	&__advantages{
+		font-size: 2em;
+	}
+	&__market-links{
+		justify-content: center;
+		font-size: 2em;
+		display: flex;
+	}
+	&__market-link{
+		margin: 1em;
+		&:hover{
+			color: inherit;
+		}
+	}
+}
+
+.s-block-popular{
+	&__banner{
+		min-height: 6em;
+		background: var(--gray);
+		height: 100%;
+	}
+	&__banner-wrapper{
+		height: 100%;
+		padding-bottom: 1em;
+	}
+	&__post-card{
+		height: 25em;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+}
+
+@media (hover: hover) and (pointer: fine){
+	.s-block-app{
+		&__market-link:hover{
+			color: var(--light)
+		}
+	}
+}
+
+@media (max-width:1000px){
+	.s-block-volatility{
+		&__heading{
+			margin-top: 0;
+		}
+	}
+}
+
+@media (max-width:400px){
+	.s-block-app{
+		&__heading{
+			font-size: 3em;
+		}
+	}
+}

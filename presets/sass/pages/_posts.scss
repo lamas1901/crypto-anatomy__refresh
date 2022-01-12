@@ -1,0 +1,19 @@
+.s-main-news{
+	color: var(--black);
+	&__banner{
+		height: 10em;
+		background: var(--gray);
+	}
+	&__heading{
+		margin: 0 0 0.5em;
+	}
+	&__local-posts{
+		padding-bottom: 2em;
+	}
+	&__global-posts{
+		padding-bottom: 3em;
+	}
+	&__brief-card{
+		margin-bottom: 1em;
+	}
+}

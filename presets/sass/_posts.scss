@@ -1,0 +1,122 @@
+.post{
+	border-radius: var(--box-border-radius);
+	transition: 0.25s;
+	background: var(--light);
+	&__brief{
+		padding: 1.5rem;
+		line-height: 1.5em;
+	}
+	&__heading{
+		color: inherit;
+		font-size: 1.2em;
+		&:hover{
+			color: inherit;
+		}
+	}
+}
+
+.post-card{
+	position: relative;
+	min-height: 20em;
+	&__image{
+		border-radius: var(--box-border-radius);
+		filter: grayscale(100%) blur(0.05em);
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		transition: 0.1s;
+	}
+	&__brief{
+		bottom: 0;
+		color: var(--light);
+		position: absolute;
+	}
+	&__heart{
+		color: var(--light);
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		transition: 0.1s;
+	}
+}
+
+.post-card-large{
+	&__brief{
+		font-size:1.5rem;
+	}
+}
+
+.post-usual{
+	position: relative;
+	color: var(--black);
+	cursor: pointer;
+	border: 0.01em solid rgba(0,0,0,0.2);
+	margin-top: 1em;
+	&__brief{
+		width: calc(100% - 3em);
+	}
+	&__heart{
+		color: var(--gray);
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+	}
+}
+
+.mini-post{
+	margin-bottom: 1em;
+	&__heading{
+		font-size: 1.2rem;
+		display: block;
+		color: var(--black);
+		opacity: 0.8;
+		margin-bottom: 0.5em;
+		&:hover{
+			opacity: 1;
+			color: inherit;
+		}
+	}
+}
+
+.posts-nav{
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em 3rem;
+	&__item{
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1rem;
+		color: var(--black);
+		z-index: 3;
+		&:hover{
+			color: var(--lighted);
+			cursor: pointer;
+		}
+	}
+}
+
+@media (hover: hover) and (pointer: fine){
+	.post{
+		&:hover{
+			box-shadow: rgba(0, 0, 0, 0.8) 0px 12px 1em -12px;
+		}
+	}
+	.post-card{
+		&:hover &__image{
+			filter: grayscale(100%);
+		}
+		&__heart:hover{
+			font-size: 2.5em;
+			color: var(--red);
+		}
+	}
+	.post-usual{
+		&__tag:hover{
+			opacity: 0.8;
+		}
+		&__heart:hover{
+			color: var(--red);
+		}
+	}
+}

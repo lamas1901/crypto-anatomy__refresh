@@ -1,0 +1,137 @@
+.header{
+	background: var(--back-black);
+	color: var(--white);
+	position: fixed;
+	top: 0;
+    width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: 0.25s;
+    transition-delay: 0.25s;
+    z-index: 4;
+	&__burger-button{
+		line-height: 1em;
+		font-size: 3em;
+		display: none;
+		&-image{
+			height: 3em;
+		}
+	}
+	&__wrapper{
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo{
+		color: var(--light);
+	}
+	&__nav{
+		font-family: Quantico,Raleway;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+		line-height: 1.5em;
+		display: flex;
+		align-items: center;
+	}
+	&__nav-item{
+		font-size: 1em;
+		text-transform: uppercase;
+		margin: 1em;
+		list-style: none;
+	}
+	&__nav-item-link{
+		text-decoration: none;
+		color: inherit;
+		&--active{
+			color:var(--lighted);
+		}
+	}
+	&__nav-item-link:hover{
+		text-decoration: none;
+	}
+	&__button-side{
+		display: flex;
+		align-items: center;
+		gap: 1em;
+	}
+	&__search-bar{
+		&-input{
+			&:focus{
+				width: 10em;
+			}
+		}
+	}
+}
+
+.burger-menu{
+	z-index: 100;
+	overflow: auto;
+	transform: translate(calc(100% + 0.1em));
+	padding: 1em 2em;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 150%;
+	background: var(--back-black);
+	transition: 0.5s;
+	border-left: 0.1em solid var(--lighted);
+	color: var(--light);
+	&__market-link{
+		color: var(--light);
+	}
+	&__market-link:hover{
+		color: inherit;
+	}
+	&__button{
+		width: 100% !important;
+		text-align: center;
+	}
+	&__market-buttons{
+		font-size: 1.4em;
+	}
+}
+
+.burger-menu--active{
+	transform: translate(0%);
+}
+
+@media (hover: hover) and (pointer: fine){
+	.header{
+		 &--hiden{
+	    	transform: translate(0,-100%);
+	    	opacity: 0.8;
+	    }
+	}
+	.burger-menu{
+		&__market-link:hover{
+			i{
+				color: var(--lighted)
+			}
+		}
+
+	}
+}
+
+
+@media (max-width: 1250px){
+	.header{
+		&__nav{
+			display: none;
+		}
+		&__burger-button{
+			display: block;
+		}
+		&__button-side{
+			font-size: 1.2em;
+			display: none;
+		}
+		&__search-bar{
+			display: none;
+		}
+	}
+	.burger-menu{
+		// font-size: 1em;
+	}
+}

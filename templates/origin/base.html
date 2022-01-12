@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crypto Anatomy | {% block title %}{% endblock %}</title>
+	<link rel="shortcut icon" type="image/jpg" href="assets/images/logo-lighted.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+<body>
+	<div class="s-wrapper">
+		
+		{% include './header.html' %}
+		
+		<main>
+
+			{% block content %}{% endblock %}
+
+		</main>
+		
+		<div class="footer__back">
+			<footer class="footer container-sm py-5">
+				<div class="footer__wrapper  d-flex flex-wrap justify-content-center align-items-center">
+					<div class="mb-3">
+						Crypto Anatomy предупреждает о возможности рисков и оповещает, что информация на данном веб-сайте взята из различных источников, может быть не всегда актуальна или полностью верна, не является инвестиционной рекомендацией, может не соответствовать вашим инвестиционным целям и профилю. Предоставляемая информация носит ознакомительный, ориентировочный, вспомогательный характер. Crypto Anatomy не имеет отношения к решениям пользователей, принятым на основании данной информации.
+						<br><br>
+						Торгуя криптовалютами, следует помнить о рисках, в том числе о возможности утраты части инвестиций или всей суммы. Принимая решение о торговле криптовалютами, необходимо иметь достаточно информации в данной сфере, быть готовым к риску потери инвестиций, трезво оценивать свои цели, знания и опыт.
+					</div>
+					<a href="#" class="footer__logo logo">
+						<img src="assets/images/logo-gray.png" alt="LOGO" class="logo__image">
+						<div class="logo__text">Crypto Anatomy</div>
+					</a>
+					<div class="footer__items">
+						<div class=footer__item><a href="#" class="footer__link footer__item ">Почта для ваших вопросов и предложений</a></div>
+						<div class=footer__item><a href="#" class="footer__link footer__item" id="agreement">Пользовательское соглашение</a></div>
+						<div class=footer__item><a href="#" class="footer__link footer__item ">Правовая информация</a></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+	<!-- [ Modal windows ] -->
+
+	<div class="modal-background d-none" data-el="modalBack"></div>
+	<div class="modal-window modal-window-mini" data-el="modalQuestion">
+		<div class="modal-window__wrapper" data-el="modalQuestion.questionWrapper">
+			<div class="modal-window-mini__window-buttons">
+				<i class="fas fa-cog cursor" data-el="modalQuestion.buttonSettings"></i>
+				<i class="far fa-window-close cursor" data-el="modalQuestion.closeButton"></i>
+			</div>
+			<div data-el="modalQuestion.wrapperInput">
+				<div class="heading modal-window-mini__heading">
+					Заглавие
+				</div>
+				<div class="modal-window-mini__question mb-2" data-el="modalQuestion.question">
+					Не следует, однако забывать, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание систем массового участия. Да или нет?
+				</div>
+				<textarea type="text" class="modal-window-mini__input w-100" data-el="modalQuestion.inputAnswer"></textarea>
+				<div class="modal-window-mini__button button button-sm" data-el="modalQuestion.buttonSend">
+					Узнать правильный ответ
+				</div>
+			</div>	
+			<div class="d-none" data-el="modalQuestion.wrapperOutput">
+				<div class="heading modal-window-mini__heading">
+					Ответ
+				</div>
+				<div class="modal-window-mini__question mb-5" data-el="modalQuestion.answer">
+					Не следует, однако забывать, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Задача организации, в особенности же консультация с широким активом в значительной степени обуславливает создание систем массового участия. Да или нет?
+				</div>
+				<div class="modal-window-mini__button button button-sm" data-el="modalQuestion.buttonAgain">
+					Новый вопрос
+				</div>
+			</div>
+		</div>
+		<div class="modal-window__settings-wrapper d-none" data-el="modalQuestion.settingsWrapper">
+			<div class="modal-window-mini__window-buttons">
+				<i class="far fa-window-close cursor" data-el="modalQuestion.buttonSettingsClose"></i>
+			</div>
+			<div class="heading modal-window-mini__heading">
+				Настройки
+			</div>
+			<input class="d-none" type="checkbox" data-el="modalQuestion.checkboxAlwaysDisplay">
+			<input class="d-none" type="checkbox" data-el="modalQuestion.checkboxOftenDisplay">
+			<input class="d-none" type="checkbox" data-el="modalQuestion.checkboxNeverDisplay">
+			<div class="mt-4 mb-5">
+				<!-- <div class="checkbox checkbox--active mr-2 mt-1"></div> -->
+				<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalQuestion.alwaysDisplay">
+					всегда показывать
+				</p>
+				<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalQuestion.oftenDisplay">
+					показывать реже
+				</p>
+				<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalQuestion.neverDisplay">
+					никога не показывать
+				</p>
+			</div>
+			<div class="modal-window-mini__button button button-sm" data-el="modalQuestion.buttonSettingsSave">
+				Сохранить
+			</div>
+		</div>	
+	</div>
+	<div class="s-modal-register modal-window modal-window--fixed d-none" data-el="modalRegister">
+		<div class="modal-window__close-button cursor" data-el="modalRegister.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper" data-el="modalRegister.wrapper">
+			<h6 class="modal-window__heading">
+				<img src="assets/images/heading.png" class="modal-window__heading-logo" alt="logo_heading">
+				<span>Регистрация</span>
+			</h6>
+			<p class="text-center modal-window__p modal-window__sub-heading modal-window__p--upper mt-3" style="font-family: var(--font1);">Добро пожаловать в <span class="special-font">Crypto Anatomy</span></p>
+			<div class="s-modal__type-toggle">
+				<p class="modal-window__p text-center">
+					<span class="lighted cursor mr-5" data-el="modalRegister.withMail">E-MAIL</span> 
+					<span class="cursor" data-el="modalRegister.withPhone">ТЕЛЕФОН</span>
+				</p>
+			</div>
+			<div class="s-modal-register__inputs">
+				<input placeholder="E-MAIL" type="text" class="modal-window__input s-modal-register__input input" data-el="modalRegister.inputMail">
+				<input placeholder="ТЕЛЕФОН" type="phone" class="d-none modal-window__input s-modal-register__input input" data-el="modalRegister.inputPhone">
+				<input placeholder="ПАРОЛЬ" type="password" class="modal-window__input s-modal-register__input input">
+				<input class="d-none" type="checkbox" name="subscribe" data-el="modalRegister.checkboxSubscribe">
+				<input class="d-none" type="checkbox" name="agree" data-el="modalRegister.checkboxAgree">
+				<div class="mt-4 mb-3">
+					<!-- <div class="checkbox checkbox--active mr-2 mt-1"></div> -->
+					<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalRegister.subscribe">
+						подпишись для получения обновлений по e-mail
+					</p>
+					<p class=" modal-window__p modal-window__p--checkboxed checkboxed" data-el="modalRegister.agree">
+						я ознакомился(ась) и соглашаюсь с <a class="lighted" id="security" href="#">условиями обслуживания </a> Crypto Anatomy
+					</p>  
+				</div>
+				<div class="modal-window__button button button-lg">Регистрация</div>
+				<span class="modal-window__p d-block mt-3">Есть аккаунт? <a class="lighted" href="#">Войти</a></span> 
+			</div>
+		</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalLogin">
+		<div class="modal-window__close-button cursor" data-el="modalLogin.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper" data-el="modalLogin.wrapper">
+			<h6 class="modal-window__heading">
+				<img src="assets/images/heading.png" class="modal-window__heading-logo" alt="logo_heading">
+				<span>Вход</span>
+			</h6>
+			<p class="text-center modal-window__p modal-window__sub-heading modal-window__p--upper mt-3" style="font-family: var(--font1);">Вы вернулись! используйте для входа электронную почту или штрихкод</p>
+			<div>
+				<div class="s-modal__type-toggle">
+					<p class="modal-window__p text-center">
+						<span class="lighted cursor mr-5" data-el="modalLogin.withMail">E-MAIL</span> 
+						<span class="cursor" data-el="modalLogin.withPhone">ТЕЛЕФОН</span>
+					</p>
+				</div>
+				<div class="s-modal-register__inputs">
+					<input placeholder="E-MAIL" type="text" class="modal-window__input s-modal-register__input input" data-el="modalLogin.inputMail">
+					<input placeholder="ТЕЛЕФОН" type="phone" class="d-none modal-window__input s-modal-register__input input" data-el="modalLogin.inputPhone">
+					<input placeholder="ПАРОЛЬ" type="password" class="modal-window__input s-modal-register__input input">
+					<input class="d-none" type="checkbox" name="subscribe" data-el="modalLogin.checkboxSubscribe">
+					<div class="d-flex">
+						<div class="modal-window__button button button-lg w-75 mr-2">Вход</div>
+						<div class="modal-window__button button button-lg button-circle w-25"><i class="fas fa-qrcode"></i></div>
+					</div>
+					<span class="modal-window__p d-block mt-3">Забыли пароль? <a class="lighted" href="#">Восстановить</a></span>
+					<span class="modal-window__p d-block"><a href="#" class="lighted">Зарегистрироваться</a></span> 
+				</div>
+			</div>
+			<div class="s-modal-login__qr-wrapper d-none">
+				<div class="s-modal-login__qr mb-1">
+					<img src="assets/images/qr.png" alt="qr" class="s-modal-login__qr-image">
+				</div>
+				<p class="modal-window__p text-center">
+					Использовать штрихкод
+					<br> 
+					из <span class="lighted">приложения Crypto Anatomy </span>
+					<br>
+					для быстрого входа
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalCopyright">
+		<div class="modal-window__close-button cursor" data-el="modalCopyright.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper">
+			<h6 class="modal-window__heading mb-4">
+				<span>Защита авторских прав</span>
+			</h6>
+			{% include './copy/security.html' %}
+		</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalAgreement">
+		<div class="modal-window__close-button cursor" data-el="modalAgreement.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper">
+			<h6 class="modal-window__heading mb-4">
+				<span>Пользовательское соглашение</span>
+			</h6>
+			{% include './copy/agreement.html' %}
+			</div>
+	</div>
+	<div class="modal-window modal-window--fixed d-none" data-el="modalSecurity">
+		<div class="modal-window__close-button cursor" data-el="modalSecurity.closeButton">
+			<i class="far fa-window-close"></i>
+		</div>
+		<div class="modal-window__wrapper">
+			<h6 class="modal-window__heading mb-4">
+				<span>Обработка персональных данных</span>
+			</h6>
+			{% include "./copy/personal.html" %}
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script>
+		const labels = ["BTC","BTC","BTC","BTC","BTC","BTC","BTC",
+		"BTC","BTC","BTC","BTC","BTC","BTC","BTC",];
+		const data = {
+		  labels: labels,
+		  datasets: [{
+		    label: 'My First Dataset',
+		    data: [65, 59, 80, 81, 56, 55, 40,65, 59, 80, 81, 56, 55, 40],
+		    backgroundColor: [
+		      '#FFC700'
+		    ]
+		  }]
+		};
+		const config = {
+			type: 'bar',
+			data: data,
+			options: {
+				responsive: true,
+				maintainAspectRatio: false,
+				plugins:{
+					legend:{
+						display: false
+					}
+				}
+			},
+		};
+		Chart.defaults.font.size = 16
+		const myChart = new Chart(
+		    document.getElementById('myChart'),
+		    config
+		  );
+		 
+	</script>
+	<script src="assets/js/component.js"></script>
+	<script src="assets/js/addition.js"></script>
+	<script src='assets/js/index.js'></script>
+</body>
+</html>
