@@ -705,6 +705,10 @@ a:hover {
     top: 50%;
     left: 50%;
   }
+
+  .pagination {
+    font-size: 0.8em;
+  }
 }
 .post {
   border-radius: var(--box-border-radius);
