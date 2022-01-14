@@ -7,6 +7,9 @@
 		<nav class="header__nav">
 			<li class="header__nav-item"><a class="header__nav-item-link" href="#">Волатильность</a></li>
 			<li class="header__nav-item"><a class="header__nav-item-link header__nav-item-link--active" href="posts.html">Лента</a></li>
+			{% if current_user %}
+				<li class="header__nav-item"><a class="header__nav-item-link" href="list.html">Избранное</a></li>
+			{% endif %}
 			<li class="header__nav-item"><a class="header__nav-item-link" href="#">Тариф PRO</a></li>
 			<li class="header__nav-item"><a class="header__nav-item-link" href="#">О проекте</a></li>
 		</nav>
@@ -15,8 +18,12 @@
 				<i class="fas fa-search search-bar__icon mr-2"></i>
 				<input placeholder="Поиск..." class="header__search-bar-input search-bar__input input" type="text">
 			</div>	
-			<div class="button button-sm button-std  cursor" data-el="buttonLogin">Вход</div>
-			<div class="button button-sm button-spc cursor" data-el="buttonRegister">Регистрация</div>
+			{% if not current_user %}
+				<div class="button button-sm button-std  cursor" data-el="buttonLogin">Вход</div>
+				<div class="button button-sm button-spc cursor" data-el="buttonRegister">Регистрация</div>
+			{% else %}
+				<a href="#">Выйти</a>
+			{% endif %}
 		</div>	
 		<div class="header__burger-button cursor" data-el="burgerButton-Open">
 			<i class="fas fa-bars"></i>
@@ -24,7 +31,7 @@
 	</div>
 </header>
 <div class="burger-menu" data-el="burgerMenu">	
-	<div class="button button-spc  button-sm mb-3" data-el="burgerButton-Close">
+	<div class="button button-spc  button-circle button-sm mb-3" data-el="burgerButton-Close">
 		<i class="fas fa-arrow-right"></i>
 	</div>
 	<div class="burger-menu__search-bar search-bar mb-3">	
@@ -35,9 +42,12 @@
 		<div class="button button-sm cursor burger-menu__button mb-3" data-el="buttonLogin">Вход</div>
 		<div class="button button-sm cursor button-spc burger-menu__button cursor" data-el="buttonRegister">Регистрация</div>
 	</div>
-	<nav>
+	<nav class="my-5">
 		<li class="header__nav-item"><a class="header__nav-item-link" href="#">Волатильность</a></li>
 		<li class="header__nav-item"><a class="header__nav-item-link header__nav-item-link--active" href="posts.html">Лента</a></li>
+		{% if current_user %}
+			<li class="header__nav-item"><a class="header__nav-item-link" href="#">Избранное</a></li>
+		{% endif %}
 		<li class="header__nav-item"><a class="header__nav-item-link" href="#">Тариф PRO</a></li>
 		<li class="header__nav-item"><a class="header__nav-item-link" href="#">О проекте</a></li>
 

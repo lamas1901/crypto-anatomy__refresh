@@ -130,7 +130,7 @@
 
 
 .search-bar{
-	border: var(--borders) solid var(--light);
+	border: 0.1px solid var(--light);
 	border-radius: 0.2em;
 	overflow: hidden;
 	padding: 0.7em;
@@ -185,6 +185,7 @@
 }
 
 .button-circle{
+	width: fit-content;
 	padding: 0.7em 0.7em;
 }
 
@@ -266,9 +267,28 @@
 // [ post-card-grid ]
 
 .post-card-grid{
+	height: fit-content;
 	display: grid;
 	grid-template-columns: repeat(auto-fit,minmax(19em,1fr));
 	grid-gap: 1em;
+}
+
+.pagination{
+	width: fit-content;
+	margin: 0 auto;
+	&__button{
+		color: var(--black);
+		margin: 0.3em;
+		opacity: 0.8;
+		&--active{
+			padding: 1em;
+			opacity: 1;
+		}
+	}
+}
+
+.muted{
+	opacity: 0.4;
 }
 
 @media (hover: hover) and (pointer: fine){
@@ -289,6 +309,7 @@
 		} 
 	}
 }
+
 
 @media (max-width: 1000px){
 	.logo{

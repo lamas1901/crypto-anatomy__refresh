@@ -11,7 +11,7 @@
   --font1: Raleway;
   --main-font: Roboto;
   --special-font: Quantico;
-  --box-border-radius: 0.2em;
+  --box-border-radius: 0.3em;
   --borders: 0.15rem;
   --site-max-weight: 180;
 }
@@ -490,7 +490,7 @@ a:hover {
 }
 
 .search-bar {
-  border: var(--borders) solid var(--light);
+  border: 0.1px solid var(--light);
   border-radius: 0.2em;
   overflow: hidden;
   padding: 0.7em;
@@ -550,6 +550,9 @@ a:hover {
 }
 
 .button-circle {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 0.7em 0.7em;
 }
 
@@ -631,9 +634,32 @@ a:hover {
 }
 
 .post-card-grid {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
   grid-gap: 1em;
+}
+
+.pagination {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.pagination__button {
+  color: var(--black);
+  margin: 0.3em;
+  opacity: 0.8;
+}
+.pagination__button--active {
+  padding: 1em;
+  opacity: 1;
+}
+
+.muted {
+  opacity: 0.4;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -700,7 +726,7 @@ a:hover {
 
 .post-card {
   position: relative;
-  min-height: 20em;
+  min-height: 18em;
 }
 .post-card__image {
   border-radius: var(--box-border-radius);

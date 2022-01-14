@@ -17,7 +17,7 @@
 
 .post-card{
 	position: relative;
-	min-height: 20em;
+	min-height: 18em;
 	&__image{
 		border-radius: var(--box-border-radius);
 		filter: grayscale(100%) blur(0.05em);
